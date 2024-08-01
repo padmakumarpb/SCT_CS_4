@@ -1,1 +1,2 @@
-Key.ctrl'z'
+what to do
+Key.ctrlz
