@@ -23,7 +23,7 @@ Ensure you have Python installed. This program uses the `pynput` library to capt
 - After the security message is displayed, press Enter to start logging keystrokes.
 - Type some keys on your keyboard. The program will log all keystrokes, including special keys.
 - The keystrokes will be saved to log.txt. Here is an example of the file content:
-    - hi ,welcomr<backspace>e to my <shift>program.
+  - hi ,welcomr`<backspace>`e to my `<shift>`program.
 
 ## Contact
 
